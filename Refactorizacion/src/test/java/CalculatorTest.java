@@ -1,8 +1,7 @@
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class CalculatorTest {
 
@@ -26,5 +25,37 @@ public class CalculatorTest {
         // linea eliminada: Calculadora calculadora = new Calculadora();
         assertEquals(5,calculadora.addition(2,3));
 
+    }
+    @Test //Añade la funcion de prueba de la resta
+    public void whenDifferenceTwoNumberThenReturnCorrectoAnswer() {
+        assertEquals(6,calculadora.differences(11,5));
+    }
+    // REQUISITO 3
+    @Test // Agregamos metodo de prueba de la division
+    public void whenDivisionThenReturnCorrectAnswer() {
+        assertEquals(2,calculadora.division(8,4));
+    }
+
+    @Test // Prueba para la division entre 0
+    public void whenDivisionByZeroThenThrowException() {
+        Throwable exception = assertThrows(IllegalArgumentException.class,()->{calculadora.division(5,0);});
+        assertEquals("No se puede dividir por cero",exception.getMessage());
+    }
+
+    // Agregando mas pruebas de la clase Calculadora
+    @Test
+    public void whenMultiplicationTwoNumberReturnCorrectAnswer() {
+        assertEquals(24,calculadora.multiplication(6,4));
+    }
+    //Analogo con las dos pruebas para la division, para la raiz pero de un negativo
+    @Test
+    public void whenSquareRootNumberReturnCorrectAnswer() {
+        assertEquals(4,calculadora.squareRoot(16));
+    }
+
+    @Test
+    public void whenSquareRootWithNegativeNumber() {
+        Throwable exception = assertThrows(IllegalArgumentException.class,()->{calculadora.squareRoot(-1);});
+        assertEquals("No se puede sacar raiz cuadrada de un negativo",exception.getMessage());
     }
 }
