@@ -30,3 +30,12 @@ Finalmente tendriamos  :
 
 ![Captura1](./Imagenes/Captura3.PNG)
 
+Prueba no pasa tenemos que retornar True
+
+```
+public class Calculadora {
+    public boolean getStatus() {
+        return false;
+    }
+}
+``` 
