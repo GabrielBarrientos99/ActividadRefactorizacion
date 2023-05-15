@@ -45,5 +45,16 @@ La prueba pasa :
 
 ![Captura1](./Imagenes/Captura5.PNG)
 
+Ahora lo refactorizamos añadiendo un atributo que guarde el estado
+```
+private boolean status;
 
+public Calculadora() {
+	this.status = true;
+}
+
+public boolean getStatus() {
+	return status;
+}
+``` 
 
