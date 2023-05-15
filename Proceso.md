@@ -13,4 +13,4 @@ public void whenCalculatorInitializedThenReturnTrue() {
 }
 ``` 
 Evidencia:
-![Captura1](./Imagenes)
+![Captura1](./Imagenes/Captura.PNG)
