@@ -18,11 +18,15 @@ Evidencia:
 
 Importamos : 
 
-import org.junit.jupiter.api.Test; Para @Test
+- import org.junit.jupiter.api.Test; Para @Test
 
-import static org.junit.jupiter.api.Assertions.assertTrue; Para assertTrue( ... )
+- import static org.junit.jupiter.api.Assertions.assertTrue; Para assertTrue( ... )
 
-Control+ Enter para crear  la clase Calculadora
+- Control+ Enter para crear  la clase Calculadora
 
 ![Captura1](./Imagenes/Captura2.PNG)
+
+Finalmente tendriamos  :
+
+![Captura1](./Imagenes/Captura3.PNG)
 
