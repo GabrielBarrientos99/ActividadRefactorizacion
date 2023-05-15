@@ -39,3 +39,11 @@ public class Calculadora {
     }
 }
 ``` 
+La prueba pasa :
+
+![Captura1](./Imagenes/Captura4.PNG)
+
+![Captura1](./Imagenes/Captura5.PNG)
+
+
+
