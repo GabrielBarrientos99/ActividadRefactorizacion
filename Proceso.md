@@ -12,3 +12,5 @@ public void whenCalculatorInitializedThenReturnTrue() {
 	assertTrue(calculadora.getStatus());
 }
 ``` 
+Evidencia:
+![Captura1](./Imagenes)
